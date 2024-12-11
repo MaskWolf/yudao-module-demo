@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cn.iocoder.cloud</groupId>
+    <artifactId>yudao-module-demo</artifactId>
+    <version>2.3.0-SNAPSHOT</version>
+    <packaging>pom</packaging> <!-- 2. 新增 packaging 为 pom -->
+
+    <name>${project.artifactId}</name> <!-- 3. 新增 name 为 ${project.artifactId} -->
+    <description> <!-- 4. 新增 description 为该模块的描述 -->
+        demo 模块，主要实现 XXX、YYY、ZZZ 等功能。
+    </description>
+
+    <modules>
+        <module>yudao-module-demo-api</module>
+        <module>yudao-module-demo-biz</module>
+    </modules>
+
+    <properties>
+        <weili.shark.module.version>1.0-SNAPSHOT</weili.shark.module.version>
+        <yudao.cloud.version>2.3.0-SNAPSHOT</yudao.cloud.version>
+        <spring.cloud.alibaba.version>2023.0.1.2</spring.cloud.alibaba.version>
+        <spring.boot.version>3.3.4</spring.boot.version>
+        <!-- Maven 相关 -->
+        <java.version>17</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+    </properties>
+
+</project>
